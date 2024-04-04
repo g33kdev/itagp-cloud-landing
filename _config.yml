@@ -57,7 +57,7 @@ features                                  :
     fontawesome_icon_name                 : adjust
   
   - title                                 : Entry Merchant and Name Autocomplete
-    description                           : Merchant and name autocompletes with previously entered info.
+    description                           : Quickly fill in details with previously entered info.
     fontawesome_icon_name                 : magic
 
   - title                                 : # New Feature Title
