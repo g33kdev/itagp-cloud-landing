@@ -7,6 +7,33 @@
 	<title class="pageTitle">{{ site.page_title }}</title>
 	<meta name="description" content="{{ site.app_description }}">
 
+	{% if site.ios_app_id %}
+	<meta name="twitter:app:name:iphone" content="{{ site.app_name }}">
+	<meta name="twitter:app:id:iphone" content="{{ site.ios_app_id }}">
+	<meta property="al:ios:app_name" content="{{ site.app_name }}">
+	<meta property="al:ios:app_store_id" content="{{ site.ios_app_id }}">
+	{% endif %}
+	{% if site.play_app_id %}
+	<meta property="al:android:app_name" content="{{ site.app_name }}">
+	<meta property="al:android:package" content="{{ site.play_app_id }}">
+	{% endif %}
+	<meta property="og:site_name" content="{{ site.page_title }}">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="{{ site.page_title }}">
+	<meta property="twitter:title" content="{{ site.page_title }}">
+	{% if site.twitter_username %}
+	<meta name="twitter:site" content="@{{ site.twitter_username }}">
+	{% endif %}
+	<meta name="description" content="{{ site.app_description }}">
+	<meta property="og:description" content="{{ site.app_description }}">
+	<meta property="twitter:description" content="{{ site.app_description }}">
+	<meta property="og:url" content="{{ site.url }}/{{ site.baseurl }}">
+	<meta property="al:web:url" content="{{ site.url }}/{{ site.baseurl }}">
+	<meta property="og:image" content="{{ site.card_image | absolute_url }}">
+	<meta name="twitter:image:src" content="{{ site.card_image | absolute_url }}">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="robots" content="index,follow,max-image-preview:large">
+
 	<link rel="shortcut icon" href="{{ site.app_icon | relative_url }}">
 
 	<!-- Smart App Banner -->
@@ -16,4 +43,11 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
+	{% if site.posthog_api_key %}
+	<!-- PostHog Analytics -->
+	<script>
+		!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+		posthog.init('{{ site.posthog_api_key }}',{api_host:'{{ site.posthog_api_host }}'})
+	</script>
+	{% endif %}
 </head>
