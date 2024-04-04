@@ -7,6 +7,33 @@
 	<title class="pageTitle">{{ site.page_title }}</title>
 	<meta name="description" content="{{ site.app_description }}">
 
+	{% if site.ios_app_id %}
+	<meta name="twitter:app:name:iphone" content="{{ site.app_name }}">
+	<meta name="twitter:app:id:iphone" content="{{ site.ios_app_id }}">
+	<meta property="al:ios:app_name" content="{{ site.app_name }}">
+	<meta property="al:ios:app_store_id" content="{{ site.ios_app_id }}">
+	{% endif %}
+	{% if site.play_app_id %}
+	<meta property="al:android:app_name" content="{{ site.app_name }}">
+	<meta property="al:android:package" content="{{ site.play_app_id }}">
+	{% endif %}
+	<meta property="og:site_name" content="{{ site.page_title }}">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="{{ site.page_title }}">
+	<meta property="twitter:title" content="{{ site.page_title }}">
+	{% if site.twitter_username %}
+	<meta name="twitter:site" content="@{{ site.twitter_username }}">
+	{% endif %}
+	<meta name="description" content="{{ site.app_description }}">
+	<meta property="og:description" content="{{ site.app_description }}">
+	<meta property="twitter:description" content="{{ site.app_description }}">
+	<meta property="og:url" content="{{ site.url }}/{{ site.baseurl }}">
+	<meta property="al:web:url" content="{{ site.url }}/{{ site.baseurl }}">
+	<meta property="og:image" content="{{ site.card_image | absolute_url }}">
+	<meta name="twitter:image:src" content="{{ site.card_image | absolute_url }}">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="robots" content="index,follow,max-image-preview:large">
+
 	<link rel="shortcut icon" href="{{ site.app_icon | relative_url }}">
 
 	<!-- Smart App Banner -->
