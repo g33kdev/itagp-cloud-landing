@@ -6,6 +6,12 @@ include_in_header: true
 
 ## Changelog
 
+### **Version 1.0.2**
+
+What's New:
+
+* Fixed duplicate suggestions
+
 ### **Version 1.0.1**
 
 What's New:
