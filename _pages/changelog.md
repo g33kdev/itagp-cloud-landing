@@ -6,6 +6,13 @@ include_in_header: true
 
 ## Changelog
 
+### **Version 1.0.3**
+
+What's New:
+
+* Fixed only first 10 products being displayed in the app
+* Fixed focus not moving to the right entry input
+
 ### **Version 1.0.2**
 
 What's New:
