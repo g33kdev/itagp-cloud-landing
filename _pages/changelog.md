@@ -6,6 +6,12 @@ include_in_header: true
 
 ## Changelog
 
+### **Version 1.0.4**
+
+What's New:
+
+* Fixed entry form not loading due to empty units
+
 ### **Version 1.0.3**
 
 What's New:
