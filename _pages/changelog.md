@@ -6,6 +6,20 @@ include_in_header: true
 
 ## Changelog
 
+### **Version 1.1.1**
+
+What's New:
+
+* Improved account refresh after email verification
+
+### **Version 1.1.0**
+
+What's New:
+
+* Added onboarding screen
+* Added link to give feedback on profile page
+* Added link to get support on profile page
+
 ### **Version 1.0.4**
 
 What's New:
