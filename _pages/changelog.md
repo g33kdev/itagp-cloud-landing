@@ -6,6 +6,18 @@ include_in_header: true
 
 ## Changelog
 
+### **Version 1.1.3**
+
+What's New:
+
+* Improved onboarding screen for smaller devices
+
+### **Version 1.1.2**
+
+What's New:
+
+* Updated light mode card color so it stands out from background
+
 ### **Version 1.1.1**
 
 What's New:
