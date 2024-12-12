@@ -6,6 +6,13 @@ include_in_header: true
 
 ## Changelog
 
+### **Version 1.2.0**
+
+What's New:
+
+* Added support for deleting account from profile page
+* Minor bug fixes and improvements
+
 ### **Version 1.1.3**
 
 What's New:
