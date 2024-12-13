@@ -6,6 +6,39 @@ include_in_header: true
 
 ## Changelog
 
+### **Version 1.2.0**
+
+What's New:
+
+* Added support for deleting account from profile page
+* Minor bug fixes and improvements
+
+### **Version 1.1.3**
+
+What's New:
+
+* Improved onboarding screen for smaller devices
+
+### **Version 1.1.2**
+
+What's New:
+
+* Updated light mode card color so it stands out from background
+
+### **Version 1.1.1**
+
+What's New:
+
+* Improved account refresh after email verification
+
+### **Version 1.1.0**
+
+What's New:
+
+* Added onboarding screen
+* Added link to give feedback on profile page
+* Added link to get support on profile page
+
 ### **Version 1.0.4**
 
 What's New:
