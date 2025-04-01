@@ -6,6 +6,12 @@ include_in_header: true
 
 ## Changelog
 
+### **Version 1.3.0**
+
+What's New:
+
+* Updated feedback link to auto log in
+
 ### **Version 1.2.0**
 
 What's New:
