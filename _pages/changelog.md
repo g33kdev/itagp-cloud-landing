@@ -6,6 +6,12 @@ include_in_header: true
 
 ## Changelog
 
+### **Version 1.3.1**
+
+What's New:
+
+* Fixed cloud sync
+
 ### **Version 1.3.0**
 
 What's New:
